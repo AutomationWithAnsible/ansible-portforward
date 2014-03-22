@@ -1,0 +1,13 @@
+---
+
+- name: Copy portfrwd script and set perm 
+  copy: src=portfrwd dest=/etc/init.d/ 
+        mode=0755 owner=root group=root
+  tags: port_forwarding
+  notify: restart portfrwd
+
+- name: Copy portfrwd conf file 
+  template: src=portforward.conf.j2 dest=/etc/portforward.conf 
+            mode=0644 owner=root group=root
+  tags: port_forwarding
+  notify: restart portfrwd

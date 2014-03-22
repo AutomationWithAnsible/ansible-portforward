@@ -1,0 +1,15 @@
+
+PFRules:
+      - Type: m
+        Interface: eth0
+        LocalPort: 2222
+        DestPort : 22
+        DestIP   : 12
+        Comment  : "eth0:2222->127.0.0.1:22"
+
+      - Type: n
+        Interface: eth0
+        LocalPort: 8080
+        DestPort : 80
+        DestIP   : 127.0.0.1
+        Comment  : "eth0:8080->127.0.0.1:80"    

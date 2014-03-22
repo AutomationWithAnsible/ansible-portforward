@@ -1,0 +1,24 @@
+# {{ ansible_managed }}
+# Port forward IPtable rules config file
+#
+# Create By Adham helal (aahelal@hotmail.com)
+# 
+# Copyright 2013 
+#
+#   NOTE:  Before changing the rules please delete the rules in table. 
+#        To delete rules run "sudo /etc/init.d/portfrwd stop"
+#  
+#  Forward type either m or n 
+#       (m)  masquerade the ip 
+#		(n)  will use nat and keep original source ip
+#
+#  Interface : Ethernet interface that will receive connection usually eth0, eth1 or br0
+#
+#
+#Forward Type		Interface		LocalPort		DestinationIP		DestinationPort		Comment
+##n				eth0           3222           192.168.122.120             22                      my vm1 ssh Access
+##m				eth0           8080           192.168.122.123             80                      my vm2 tomcat Access (masq)
+{% if PFRules is defined %}{% for rule in PFRules %}
+#
+{{rule.Type}}				{{rule.Interface}}		{{rule.LocalPort}}		{{rule.DestIP}}		{{rule.DestPort}}		{{rule.Comment}}
+{% endfor %}{% endif %}

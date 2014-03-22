@@ -1,0 +1,3 @@
+---
+- name: restart portfrwd
+  service: name=portfrwd state=restarted enabled=True
