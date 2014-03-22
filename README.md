@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ahelal/ansible-portforward.svg?branch=master)](https://travis-ci.org/ahelal/ansible-portforward)
 ansible-portforward
 ===================
 
