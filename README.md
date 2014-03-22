@@ -34,11 +34,17 @@ This ansible role deploys portfoward script that controls iptables for Ubuntu 12
       ```
     
      ```Type:``` Either "n" for nat or "m" for masquerade
+     
      ```Interface:``` network interface 
+     
      ```LocalPort:``` Local Port
+     
      ```DestPort:```Destination port
+     
      ```DestIP:```  Destination IP
+     
      ```Comment:``` Comments
+     
 
 ##Configure
 You can configure your variables in ansible with one of the following
