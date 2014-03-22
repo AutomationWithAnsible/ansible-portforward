@@ -56,7 +56,7 @@ You can configure your variables in ansible with one of the following
  * Edit the default/main.yml (not recommended)
 
 ##Run
-**By default the mstmp will fail because the configuration uses a bogus smtp server you need to use a valid smtp server**
+**By default nothing will happen if you deploy witout configuration**
     
   ```ansible-playbook -l hostname portforward.yml```
 
