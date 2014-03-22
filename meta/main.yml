@@ -1,6 +1,6 @@
 galaxy_info:
   author: Adham Helal
-  description: "Contorl portforward with IPtables for Ubuntu 12.04"
+  description: "Control portforward with IPtables for Ubuntu 12.04"
   min_ansible_version: 1.4
   platforms:
   - name: Ubuntu
