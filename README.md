@@ -50,7 +50,7 @@ This ansible role deploys portfoward script that controls iptables for Ubuntu 12
 ##Configure
 You can configure your variables in ansible with one of the following
 
- * Create a variable in host/group variables directory. (recommended)
+ * Create a variable in host/group variables directory (recommended)
  * Editing var/main.yml
  * Run ansible-playbook with -e
  * Edit the default/main.yml (not recommended)
